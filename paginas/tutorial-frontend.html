@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fundamentos Front-End | Minimercados Portugal</title>
+
+    <!-- Bootstrap 5.3.7 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome 6.7.2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Estilos propios -->
+    <style>
+        body {
+            background-color: #f4f7f5;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .encabezado {
+            background: linear-gradient(135deg, #198754, #146c43);
+            color: white;
+            padding: 45px 20px;
+            text-align: center;
+        }
+
+        .encabezado i {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .menu {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+
+        .menu a {
+            color: #198754;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        .tema {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .tema h2 {
+            color: #198754;
+            margin-bottom: 20px;
+        }
+
+        .icono-tema {
+            font-size: 40px;
+            color: #198754;
+            margin-bottom: 15px;
+        }
+
+        .ejemplo {
+            background-color: #f0f8f4;
+            border-left: 5px solid #198754;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .volver {
+            display: inline-block;
+            margin-top: 10px;
+            color: #198754;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #146c43;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado" id="inicio">
+
+        <i class="fa-solid fa-store"></i>
+
+        <h1>Fundamentos Front-End</h1>
+
+        <p class="lead">
+            Aplicados al proyecto Minimercados Portugal
+        </p>
+
+        <p>
+            Tutorial de HTML, CSS, JavaScript y componentes Front-End
+        </p>
+
+    </header>
+
+
+    <main class="container my-5">
+
+        <!-- INTRODUCCIÓN -->
+        <section class="tema">
+
+            <h2>
+                <i class="fa-solid fa-circle-info"></i>
+                Introducción
+            </h2>
+
+            <p>
+                El Front-End corresponde a la parte visual de una aplicación web
+                con la que interactúa directamente el usuario.
+            </p>
+
+            <p>
+                En el proyecto Minimercados Portugal se utilizan diferentes
+                tecnologías para construir una interfaz organizada, clara y
+                fácil de utilizar.
+            </p>
+
+        </section>
+
+
+        <!-- MENÚ DEL TUTORIAL -->
+        <section class="menu">
+
+            <h3 class="text-success">
+                <i class="fa-solid fa-list"></i>
+                Contenido del tutorial
+            </h3>
+
+            <ol>
+                <li>
+                    <a href="#html">HTML</a>
+                </li>
+
+                <li>
+                    <a href="#css">CSS</a>
+                </li>
+
+                <li>
+                    <a href="#javascript">JavaScript</a>
+                </li>
+
+                <li>
+                    <a href="#bootstrap">Bootstrap</a>
+                </li>
+
+                <li>
+                    <a href="#componentes">Componentes Front-End</a>
+                </li>
+            </ol>
+
+        </section>
+
+
+        <!-- HTML -->
+        <section class="tema" id="html">
+
+            <div class="icono-tema">
+                <i class="fa-brands fa-html5"></i>
+            </div>
+
+            <h2>1. HTML</h2>
+
+            <h4>¿Qué es HTML?</h4>
+
+            <p>
+                HTML es el lenguaje utilizado para construir la estructura
+                de una página web. Permite organizar elementos como títulos,
+                párrafos, enlaces, imágenes, formularios, tablas y botones.
+            </p>
+
+            <h4>Aplicación en Minimercados Portugal</h4>
+
+            <p>
+                En Minimercados Portugal, HTML permite construir la estructura
+                de las diferentes páginas del sistema, como Dashboard,
+                Productos, Inventario, Clientes, Proveedores, Ventas,
+                Compras, Caja y Reportes.
+            </p>
+
+            <div class="ejemplo">
+                <strong>Ejemplo:</strong>
+                Un elemento HTML puede utilizarse para crear un título,
+                un botón o una tabla dentro de una página.
+            </div>
+
+            <a href="#inicio" class="volver">
+                ↑ Volver al inicio
+            </a>
+
+        </section>
+
+
+        <!-- CSS -->
+        <section class="tema" id="css">
+
+            <div class="icono-tema">
+                <i class="fa-brands fa-css3-alt"></i>
+            </div>
+
+            <h2>2. CSS</h2>
+
+            <h4>¿Qué es CSS?</h4>
+
+            <p>
+                CSS permite definir la apariencia visual de una página web.
+                Se utiliza para establecer colores, tamaños, espacios,
+                fuentes y distribución de los diferentes elementos.
+            </p>
+
+            <h4>Aplicación en Minimercados Portugal</h4>
+
+            <p>
+                En nuestro proyecto CSS permite personalizar la apariencia
+                de las interfaces y mantener una presentación visual
+                organizada y coherente.
+            </p>
+
+            <div class="ejemplo">
+                <strong>Ejemplo:</strong>
+                CSS permite modificar el color de fondo, tamaño de los
+                textos, espacios y presentación de los botones.
+            </div>
+
+            <a href="#inicio" class="volver">
+                ↑ Volver al inicio
+            </a>
+
+        </section>
+
+
+        <!-- JAVASCRIPT -->
+        <section class="tema" id="javascript">
+
+            <div class="icono-tema">
+                <i class="fa-brands fa-js"></i>
+            </div>
+
+            <h2>3. JavaScript</h2>
+
+            <h4>¿Qué es JavaScript?</h4>
+
+            <p>
+                JavaScript es un lenguaje de programación que permite
+                incorporar comportamiento e interacción a las páginas web.
+            </p>
+
+            <h4>Aplicación en Minimercados Portugal</h4>
+
+            <p>
+                JavaScript puede utilizarse para validar formularios,
+                controlar acciones de los usuarios e interactuar con los
+                diferentes elementos de la interfaz.
+            </p>
+
+            <div class="ejemplo">
+                <strong>Ejemplo:</strong>
+                JavaScript puede mostrar un mensaje cuando el usuario
+                realiza una determinada acción.
+            </div>
+
+            <a href="#inicio" class="volver">
+                ↑ Volver al inicio
+            </a>
+
+        </section>
+
+
+        <!-- BOOTSTRAP -->
+        <section class="tema" id="bootstrap">
+
+            <div class="icono-tema">
+                <i class="fa-brands fa-bootstrap"></i>
+            </div>
+
+            <h2>4. Bootstrap</h2>
+
+            <h4>¿Qué es Bootstrap?</h4>
+
+            <p>
+                Bootstrap es un framework utilizado para facilitar el diseño
+                de interfaces web mediante componentes y estructuras
+                previamente definidas.
+            </p>
+
+            <h4>Aplicación en Minimercados Portugal</h4>
+
+            <p>
+                En nuestro proyecto Bootstrap se utiliza como apoyo para
+                construir componentes visuales y facilitar la adaptación
+                de las interfaces a diferentes tamaños de pantalla.
+            </p>
+
+            <div class="ejemplo">
+                <strong>Versión utilizada:</strong>
+                Bootstrap 5.3.7
+            </div>
+
+            <a href="#inicio" class="volver">
+                ↑ Volver al inicio
+            </a>
+
+        </section>
+
+
+        <!-- COMPONENTES FRONT-END -->
+        <section class="tema" id="componentes">
+
+            <div class="icono-tema">
+                <i class="fa-solid fa-puzzle-piece"></i>
+            </div>
+
+            <h2>5. Componentes Front-End</h2>
+
+            <h4>¿Qué son?</h4>
+
+            <p>
+                Los componentes Front-End son elementos visuales y
+                funcionales que forman parte de la interfaz de una
+                aplicación web.
+            </p>
+
+            <h4>Componentes utilizados en Minimercados Portugal</h4>
+
+            <ul>
+                <li>Menú de navegación.</li>
+                <li>Botones.</li>
+                <li>Tarjetas.</li>
+                <li>Tablas.</li>
+                <li>Formularios.</li>
+                <li>Iconos.</li>
+                <li>Barra lateral.</li>
+                <li>Panel principal.</li>
+            </ul>
+
+            <div class="ejemplo">
+                <strong>Aplicación:</strong>
+                Estos componentes permiten organizar la información
+                y facilitar la interacción del usuario con el sistema.
+            </div>
+
+            <a href="#inicio" class="volver">
+                ↑ Volver al inicio
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <p>
+            <i class="fa-solid fa-store"></i>
+            Minimercados Portugal
+        </p>
+
+        <p>
+            Evidencia GA6-220501096-AA4-EV01
+        </p>
+
+        <p>
+            Fundamentos en la implementación de componentes Front-End
+        </p>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript propio -->
+    <script>
+        console.log("Tutorial Front-End - Minimercados Portugal");
+
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log("La página se cargó correctamente.");
+        });
+    </script>
+
+</body>
+</html>

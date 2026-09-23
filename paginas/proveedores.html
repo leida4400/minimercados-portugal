@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Proveedores | Minimercados Portugal</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+    <div class="row">
+
+        <!-- Menú lateral -->
+        <nav class="col-md-3 col-lg-2 bg-success text-white vh-100 p-3">
+
+            <h3 class="text-center mb-4">
+                <i class="fa-solid fa-store"></i>
+                Portugal
+            </h3>
+
+            <ul class="nav flex-column">
+
+                <li class="nav-item mb-3">
+                    <a href="dashboard.html" class="nav-link text-white">
+                        <i class="fa-solid fa-house"></i> Dashboard
+                    </a>
+                </li>
+
+                <li class="nav-item mb-3">
+                    <a href="productos.html" class="nav-link text-white">
+                        <i class="fa-solid fa-box"></i> Productos
+                    </a>
+                </li>
+
+                <li class="nav-item mb-3">
+                    <a href="clientes.html" class="nav-link text-white">
+                        <i class="fa-solid fa-users"></i> Clientes
+                    </a>
+                </li>
+
+                <li class="nav-item mb-3">
+                    <a href="proveedores.html" class="nav-link text-white fw-bold">
+                        <i class="fa-solid fa-truck"></i> Proveedores
+                    </a>
+                </li>
+
+                <li class="nav-item mb-3">
+                    <a href="inventario.html" class="nav-link text-white">
+                        <i class="fa-solid fa-warehouse"></i> Inventario
+                    </a>
+                </li>
+
+                <li class="nav-item mb-3">
+                    <a href="ventas.html" class="nav-link text-white">
+                        <i class="fa-solid fa-cart-shopping"></i> Ventas
+                    </a>
+                </li>
+
+                <li class="nav-item mb-3">
+                    <a href="reportes.html" class="nav-link text-white">
+                        <i class="fa-solid fa-chart-column"></i> Reportes
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="configuracion.html" class="nav-link text-white">
+                        <i class="fa-solid fa-gear"></i> Configuración
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!-- Contenido -->
+        <main class="col-md-9 col-lg-10 p-4">
+
+            <div class="d-flex justify-content-between align-items-center mb-4">
+
+                <div>
+                    <h2 class="fw-bold">Gestión de Proveedores</h2>
+                    <p class="text-muted">
+                        Administra la información de los proveedores registrados.
+                    </p>
+                </div>
+
+                <button class="btn btn-success"
+        data-bs-toggle="modal"
+        data-bs-target="#modalProveedor">
+
+    <i class="fa-solid fa-truck"></i>
+    Nuevo Proveedor
+
+</button>
+
+            </div>
+
+            <!-- Buscador -->
+            <div class="row mb-4">
+
+                <div class="col-md-6">
+                    <input type="text"
+                           class="form-control"
+                           placeholder="Buscar proveedor...">
+                </div>
+
+                <div class="col-md-3">
+                    <select class="form-select">
+                        <option>Todos</option>
+                        <option>Activos</option>
+                        <option>Inactivos</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <!-- Tabla -->
+            <div class="card shadow">
+
+                <div class="card-body">
+
+                    <table class="table table-hover">
+
+                        <thead class="table-success">
+
+                            <tr>
+                                <th>Código</th>
+                                <th>Proveedor</th>
+                                <th>Contacto</th>
+                                <th>Teléfono</th>
+                                <th>Ciudad</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>P001</td>
+                                <td>Distribuciones El Sol</td>
+                                <td>Carlos Ramírez</td>
+                                <td>3104567890</td>
+                                <td>Bogotá</td>
+                                <td>
+                                    <span class="badge bg-success">Activo</span>
+                                </td>
+
+                                <td>
+                                    <button class="btn btn-warning btn-sm">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button class="btn btn-danger btn-sm">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>P002</td>
+                                <td>Alimentos La Canasta</td>
+                                <td>María Gómez</td>
+                                <td>3209876543</td>
+                                <td>Medellín</td>
+                                <td>
+                                    <span class="badge bg-success">Activo</span>
+                                </td>
+
+                                <td>
+
+                                    <button class="btn btn-warning btn-sm">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button class="btn btn-danger btn-sm">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>P003</td>
+                                <td>Comercial Andina S.A.S.</td>
+                                <td>Jorge Martínez</td>
+                                <td>3157894561</td>
+                                <td>Cali</td>
+                                <td>
+                                    <span class="badge bg-success">Activo</span>
+                                </td>
+
+                                <td>
+
+                                    <button class="btn btn-warning btn-sm">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button class="btn btn-danger btn-sm">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>P004</td>
+                                <td>Productos del Campo</td>
+                                <td>Ana Torres</td>
+                                <td>3186547890</td>
+                                <td>Bucaramanga</td>
+                                <td>
+                                    <span class="badge bg-danger">Inactivo</span>
+                                </td>
+
+                                <td>
+
+                                    <button class="btn btn-warning btn-sm">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button class="btn btn-danger btn-sm">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</div>
+<!-- Modal Nuevo Proveedor -->
+<div class="modal fade" id="modalProveedor" tabindex="-1">
+
+    <div class="modal-dialog modal-lg">
+
+        <div class="modal-content">
+
+            <div class="modal-header bg-success text-white">
+
+                <h5 class="modal-title">
+                    <i class="fa-solid fa-truck"></i>
+                    Nuevo Proveedor
+                </h5>
+
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Código</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Proveedor</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Contacto</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Teléfono</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Ciudad</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Estado</label>
+                        <select class="form-select">
+                            <option>Activo</option>
+                            <option>Inactivo</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    Cancelar
+                </button>
+
+                <button type="button"
+                        class="btn btn-success">
+                    Guardar Proveedor
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

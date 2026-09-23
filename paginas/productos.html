@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Minimercados Portugal</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+    <div class="row">
+
+        <!-- MENÚ LATERAL -->
+        <nav class="col-md-3 col-lg-2 bg-success text-white vh-100 p-3">
+
+            <h3 class="text-center mb-4">
+                <i class="fa-solid fa-store"></i>
+                Portugal
+            </h3>
+
+            <ul class="nav flex-column">
+
+                <li class="nav-item mb-3">
+                    <a href="dashboard.html" class="nav-link text-white">
+                        <i class="fa-solid fa-house"></i> Dashboard
+                    </a>
+                </li>
+
+                <li class="nav-item mb-3">
+                    <a href="productos.html" class="nav-link text-white fw-bold">
+                        <i class="fa-solid fa-box"></i> Productos
+                    </a>
+                </li>
+
+                <li class="nav-item mb-3">
+                    <a href="clientes.html" class="nav-link text-white">
+                        <i class="fa-solid fa-users"></i> Clientes
+                    </a>
+                </li>
+
+                <li class="nav-item mb-3">
+                    <a href="proveedores.html" class="nav-link text-white">
+                        <i class="fa-solid fa-truck"></i> Proveedores
+                    </a>
+                </li>
+
+                <li class="nav-item mb-3">
+                    <a href="inventario.html" class="nav-link text-white">
+                        <i class="fa-solid fa-warehouse"></i> Inventario
+                    </a>
+                </li>
+
+                <li class="nav-item mb-3">
+                    <a href="ventas.html" class="nav-link text-white">
+                        <i class="fa-solid fa-cart-shopping"></i> Ventas
+                    </a>
+                </li>
+
+                <li class="nav-item mb-3">
+                    <a href="reportes.html" class="nav-link text-white">
+                        <i class="fa-solid fa-chart-column"></i> Reportes
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="configuracion.html" class="nav-link text-white">
+                        <i class="fa-solid fa-gear"></i> Configuración
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!-- CONTENIDO -->
+        <main class="col-md-9 col-lg-10 p-4">
+
+            <div class="d-flex justify-content-between align-items-center mb-4">
+
+                <div>
+                    <h2 class="fw-bold">Gestión de Productos</h2>
+                    <p class="text-muted">
+                        Administra todos los productos del minimercado.
+                    </p>
+                </div>
+
+                <button class="btn btn-success"
+        data-bs-toggle="modal"
+        data-bs-target="#modalProducto">
+
+    <i class="fa-solid fa-plus"></i>
+    Nuevo Producto
+
+</button>
+
+            </div>
+
+            <!-- Buscador -->
+            <div class="row mb-4">
+
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Buscar producto...">
+                </div>
+
+                <div class="col-md-3">
+                    <select class="form-select">
+                        <option>Todas las categorías</option>
+                        <option>Abarrotes</option>
+                        <option>Bebidas</option>
+                        <option>Lácteos</option>
+                        <option>Aseo</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <!-- Tabla -->
+            <div class="card shadow">
+
+                <div class="card-body">
+
+                    <table class="table table-hover">
+
+                        <thead class="table-success">
+
+                            <tr>
+
+                                <th>Código</th>
+                                <th>Producto</th>
+                                <th>Categoría</th>
+                                <th>Precio</th>
+                                <th>Stock</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>P001</td>
+                                <td>Arroz Diana</td>
+                                <td>Abarrotes</td>
+                                <td>$4.500</td>
+                                <td>50</td>
+                                <td><span class="badge bg-success">Disponible</span></td>
+                                <td>
+                                    <button class="btn btn-warning btn-sm">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button class="btn btn-danger btn-sm">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>P002</td>
+                                <td>Aceite Premier</td>
+                                <td>Abarrotes</td>
+                                <td>$18.000</td>
+                                <td>20</td>
+                                <td><span class="badge bg-success">Disponible</span></td>
+                                <td>
+
+                                    <button class="btn btn-warning btn-sm">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button class="btn btn-danger btn-sm">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>P003</td>
+                                <td>Azúcar Manuelita</td>
+                                <td>Abarrotes</td>
+                                <td>$3.800</td>
+                                <td>40</td>
+                                <td><span class="badge bg-success">Disponible</span></td>
+                                <td>
+
+                                    <button class="btn btn-warning btn-sm">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button class="btn btn-danger btn-sm">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</div>
+<!-- Modal Nuevo Producto -->
+
+<div class="modal fade" id="modalProducto" tabindex="-1">
+
+    <div class="modal-dialog modal-lg">
+
+        <div class="modal-content">
+
+            <div class="modal-header bg-success text-white">
+
+                <h5 class="modal-title">
+                    <i class="fa-solid fa-box"></i>
+                    Nuevo Producto
+                </h5>
+
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">Código</label>
+
+                        <input type="text"
+                               class="form-control"
+                               placeholder="Ej: P004">
+
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">Nombre</label>
+
+                        <input type="text"
+                               class="form-control"
+                               placeholder="Nombre del producto">
+
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">Categoría</label>
+
+                        <select class="form-select">
+
+                            <option>Abarrotes</option>
+                            <option>Bebidas</option>
+                            <option>Lácteos</option>
+                            <option>Aseo</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">Proveedor</label>
+
+                        <select class="form-select">
+
+                            <option>Seleccione...</option>
+                            <option>Alpina</option>
+                            <option>Postobón</option>
+                            <option>Nestlé</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">Precio</label>
+
+                        <input type="number"
+                               class="form-control">
+
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">Stock</label>
+
+                        <input type="number"
+                               class="form-control">
+
+                    </div>
+
+                    <div class="col-12">
+
+                        <label class="form-label">Descripción</label>
+
+                        <textarea class="form-control"
+                                  rows="3"></textarea>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+
+                    Cancelar
+
+                </button>
+
+                <button class="btn btn-success">
+
+                    <i class="fa-solid fa-floppy-disk"></i>
+
+                    Guardar Producto
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

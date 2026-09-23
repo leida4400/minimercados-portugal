@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Configuración | Minimercados Portugal</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+<div class="row">
+
+<!--====================================
+            MENÚ LATERAL
+=====================================-->
+
+<nav class="col-md-2 d-none d-md-block bg-success sidebar vh-100">
+
+<div class="position-sticky">
+
+<div class="text-center py-4">
+
+<i class="fas fa-store fa-3x text-white"></i>
+
+<h4 class="text-white mt-2">
+
+Minimercados Portugal
+
+</h4>
+
+</div>
+
+<ul class="nav flex-column">
+
+<li class="nav-item">
+<a class="nav-link text-white" href="dashboard.html">
+<i class="fas fa-chart-line me-2"></i>
+Dashboard
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link text-white" href="clientes.html">
+<i class="fas fa-users me-2"></i>
+Clientes
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link text-white" href="proveedores.html">
+<i class="fas fa-truck me-2"></i>
+Proveedores
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link text-white" href="inventario.html">
+<i class="fas fa-boxes me-2"></i>
+Inventario
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link text-white" href="ventas.html">
+<i class="fas fa-cash-register me-2"></i>
+Ventas
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link text-white" href="compras.html">
+<i class="fas fa-shopping-cart me-2"></i>
+Compras
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link text-white" href="caja.html">
+<i class="fas fa-wallet me-2"></i>
+Caja
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link text-white" href="reportes.html">
+<i class="fas fa-chart-bar me-2"></i>
+Reportes
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link text-white" href="usuarios.html">
+<i class="fas fa-user-shield me-2"></i>
+Usuarios
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active bg-white text-success rounded" href="configuracion.html">
+<i class="fas fa-cog me-2"></i>
+Configuración
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</nav>
+
+<!--====================================
+            CONTENIDO
+=====================================-->
+
+<main class="col-md-10 ms-sm-auto px-md-4">
+
+<div class="d-flex justify-content-between align-items-center mt-4">
+
+<h2>
+
+<i class="fas fa-cogs text-success me-2"></i>
+
+Configuración del Sistema
+
+</h2>
+
+<button class="btn btn-success">
+
+<i class="fas fa-save me-2"></i>
+
+Guardar Configuración
+
+</button>
+
+</div>
+
+<hr>
+
+<!--====================================
+            TARJETAS
+=====================================-->
+
+<div class="row">
+
+<div class="col-md-3">
+
+<div class="card shadow border-0">
+
+<div class="card-body text-center">
+
+<i class="fas fa-store fa-2x text-success"></i>
+
+<h5 class="mt-3">
+
+Empresa
+
+</h5>
+
+<h3 class="text-success">
+
+Activa
+
+</h3>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card shadow border-0">
+
+<div class="card-body text-center">
+
+<i class="fas fa-file-invoice-dollar fa-2x text-primary"></i>
+
+<h5 class="mt-3">
+
+IVA
+
+</h5>
+
+<h3 class="text-primary">
+
+19%
+
+</h3>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card shadow border-0">
+
+<div class="card-body text-center">
+
+<i class="fas fa-database fa-2x text-warning"></i>
+
+<h5 class="mt-3">
+
+Respaldos
+
+</h5>
+
+<h3 class="text-warning">
+
+12
+
+</h3>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card shadow border-0">
+
+<div class="card-body text-center">
+
+<i class="fas fa-user-cog fa-2x text-info"></i>
+
+<h5 class="mt-3">
+
+Usuarios
+
+</h5>
+
+<h3 class="text-info">
+
+12
+
+</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!--====================================
+            ACCESOS RÁPIDOS
+=====================================-->
+
+<div class="card shadow mt-4">
+
+<div class="card-header bg-success text-white">
+
+<h5 class="mb-0">
+
+<i class="fas fa-sliders-h me-2"></i>
+
+Opciones de Configuración
+
+</h5>
+
+</div>
+
+<div class="card-body">
+
+<div class="row text-center">
+
+<div class="col-md-3 mb-3">
+
+<button class="btn btn-outline-success w-100">
+
+<i class="fas fa-building fa-2x mb-2"></i>
+
+<br>
+
+Datos Empresa
+
+</button>
+
+</div>
+
+<div class="col-md-3 mb-3">
+
+<button class="btn btn-outline-primary w-100">
+
+<i class="fas fa-percentage fa-2x mb-2"></i>
+
+<br>
+
+Impuestos
+
+</button>
+
+</div>
+
+<div class="col-md-3 mb-3">
+
+<button class="btn btn-outline-warning w-100">
+
+<i class="fas fa-database fa-2x mb-2"></i>
+
+<br>
+
+Respaldos
+
+</button>
+
+</div>
+
+<div class="col-md-3 mb-3">
+
+<button class="btn btn-outline-info w-100">
+
+<i class="fas fa-user-cog fa-2x mb-2"></i>
+
+<br>
+
+Usuarios
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!--====================================
+        DATOS DE LA EMPRESA
+=====================================-->
+
+<div class="card shadow mt-4">
+
+    <div class="card-header bg-success text-white">
+
+        <h5 class="mb-0">
+
+            <i class="fas fa-building me-2"></i>
+
+            Información de la Empresa
+
+        </h5>
+
+    </div>
+
+    <div class="card-body">
+
+        <div class="row">
+
+            <div class="col-md-3 text-center mb-4">
+
+                <img src="../img/logo.png"
+                     class="img-fluid rounded border p-2"
+                     style="max-height:180px;"
+                     alt="Logo">
+
+                <div class="mt-3">
+
+                    <button class="btn btn-outline-success btn-sm">
+
+                        <i class="fas fa-upload me-2"></i>
+
+                        Cambiar Logo
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-9">
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">
+
+                            Razón Social
+
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            value="Minimercados Portugal S.A.S.">
+
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">
+
+                            NIT
+
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            value="900.123.456-7">
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-8 mb-3">
+
+                        <label class="form-label">
+
+                            Dirección
+
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            value="Calle 25 # 15-40">
+
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+
+                        <label class="form-label">
+
+                            Ciudad
+
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            value="Medellín">
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-4 mb-3">
+
+                        <label class="form-label">
+
+                            Teléfono
+
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            value="(604) 555-1234">
+
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+
+                        <label class="form-label">
+
+                            Celular
+
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            value="3001234567">
+
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+
+                        <label class="form-label">
+
+                            Correo
+
+                        </label>
+
+                        <input
+                            type="email"
+                            class="form-control"
+                            value="contacto@portugal.com">
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">
+
+                            Página Web
+
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            value="www.minimercadosportugal.com">
+
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">
+
+                            Representante Legal
+
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            value="Patricia Gómez">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--====================================
+        CONFIGURACIÓN COMERCIAL
+=====================================-->
+
+<div class="card shadow mt-4">
+
+    <div class="card-header bg-primary text-white">
+
+        <h5 class="mb-0">
+
+            <i class="fas fa-file-invoice-dollar me-2"></i>
+
+            Configuración Comercial
+
+        </h5>
+
+    </div>
+
+    <div class="card-body">
+
+        <div class="row">
+
+            <div class="col-md-3 mb-3">
+
+                <label class="form-label">
+
+                    IVA (%)
+
+                </label>
+
+                <input
+                    type="number"
+                    class="form-control"
+                    value="19">
+
+            </div>
+
+            <div class="col-md-3 mb-3">
+
+                <label class="form-label">
+
+                    Moneda
+
+                </label>
+
+                <select class="form-select">
+
+                    <option selected>Peso Colombiano (COP)</option>
+                    <option>Dólar (USD)</option>
+                    <option>Euro (EUR)</option>
+
+                </select>
+
+            </div>
+
+            <div class="col-md-3 mb-3">
+
+                <label class="form-label">
+
+                    Prefijo Factura
+
+                </label>
+
+                <input
+                    type="text"
+                    class="form-control"
+                    value="FAC">
+
+            </div>
+
+            <div class="col-md-3 mb-3">
+
+                <label class="form-label">
+
+                    Consecutivo Inicial
+
+                </label>
+
+                <input
+                    type="number"
+                    class="form-control"
+                    value="1001">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--====================================
+        CONFIGURACIÓN DEL SISTEMA
+=====================================-->
+
+<div class="card shadow mt-4">
+
+    <div class="card-header bg-warning">
+
+        <h5 class="mb-0">
+
+            <i class="fas fa-cogs me-2"></i>
+
+            Configuración General del Sistema
+
+        </h5>
+
+    </div>
+
+    <div class="card-body">
+
+        <div class="row">
+
+            <div class="col-md-4 mb-3">
+
+                <label class="form-label">
+
+                    Idioma
+
+                </label>
+
+                <select class="form-select">
+
+                    <option selected>Español</option>
+                    <option>English</option>
+
+                </select>
+
+            </div>
+
+            <div class="col-md-4 mb-3">
+
+                <label class="form-label">
+
+                    Zona Horaria
+
+                </label>
+
+                <select class="form-select">
+
+                    <option selected>América/Bogotá</option>
+                    <option>UTC</option>
+
+                </select>
+
+            </div>
+
+            <div class="col-md-4 mb-3">
+
+                <label class="form-label">
+
+                    Formato de Fecha
+
+                </label>
+
+                <select class="form-select">
+
+                    <option selected>dd/mm/aaaa</option>
+                    <option>aaaa-mm-dd</option>
+                    <option>mm/dd/aaaa</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6 mb-3">
+
+                <label class="form-label">
+
+                    Impresora Predeterminada
+
+                </label>
+
+                <input
+                    type="text"
+                    class="form-control"
+                    value="EPSON TM-T20III">
+
+            </div>
+
+            <div class="col-md-6 mb-3">
+
+                <label class="form-label">
+
+                    Estado del Sistema
+
+                </label>
+
+                <select class="form-select">
+
+                    <option selected>Activo</option>
+                    <option>Mantenimiento</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--====================================
+        COPIAS DE SEGURIDAD
+=====================================-->
+
+<div class="card shadow mt-4">
+
+    <div class="card-header bg-primary text-white">
+
+        <h5 class="mb-0">
+
+            <i class="fas fa-database me-2"></i>
+
+            Copias de Seguridad
+
+        </h5>
+
+    </div>
+
+    <div class="card-body">
+
+        <div class="row text-center">
+
+            <div class="col-md-4 mb-3">
+
+                <button class="btn btn-success w-100">
+
+                    <i class="fas fa-download me-2"></i>
+
+                    Crear Respaldo
+
+                </button>
+
+            </div>
+
+            <div class="col-md-4 mb-3">
+
+                <button class="btn btn-warning w-100">
+
+                    <i class="fas fa-upload me-2"></i>
+
+                    Restaurar Respaldo
+
+                </button>
+
+            </div>
+
+            <div class="col-md-4 mb-3">
+
+                <button class="btn btn-info text-white w-100">
+
+                    <i class="fas fa-folder-open me-2"></i>
+
+                    Ver Historial
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--====================================
+        NOTIFICACIONES
+=====================================-->
+
+<div class="card shadow mt-4">
+
+    <div class="card-header bg-danger text-white">
+
+        <h5 class="mb-0">
+
+            <i class="fas fa-bell me-2"></i>
+
+            Notificaciones del Sistema
+
+        </h5>
+
+    </div>
+
+    <div class="card-body">
+
+        <div class="form-check form-switch mb-3">
+
+            <input class="form-check-input" type="checkbox" checked>
+
+            <label class="form-check-label">
+
+                Activar notificaciones del sistema
+
+            </label>
+
+        </div>
+
+        <div class="form-check form-switch mb-3">
+
+            <input class="form-check-input" type="checkbox" checked>
+
+            <label class="form-check-label">
+
+                Alertar cuando un producto tenga poco inventario
+
+            </label>
+
+        </div>
+
+        <div class="form-check form-switch mb-3">
+
+            <input class="form-check-input" type="checkbox" checked>
+
+            <label class="form-check-label">
+
+                Alertar sobre productos próximos a vencer
+
+            </label>
+
+        </div>
+
+        <div class="form-check form-switch mb-3">
+
+            <input class="form-check-input" type="checkbox">
+
+            <label class="form-check-label">
+
+                Enviar resumen diario de ventas
+
+            </label>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--====================================
+        BOTONES FINALES
+=====================================-->
+
+<div class="card shadow mt-4">
+
+    <div class="card-body">
+
+        <div class="d-flex justify-content-end gap-2">
+
+            <button
+                type="button"
+                class="btn btn-secondary">
+
+                <i class="fas fa-times me-2"></i>
+
+                Cancelar
+
+            </button>
+
+            <button
+                type="reset"
+                class="btn btn-warning">
+
+                <i class="fas fa-undo me-2"></i>
+
+                Restablecer
+
+            </button>
+
+            <button
+                type="button"
+                class="btn btn-success">
+
+                <i class="fas fa-save me-2"></i>
+
+                Guardar Configuración
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--====================================
+        PIE DE PÁGINA
+=====================================-->
+
+<footer class="mt-5 mb-3">
+
+    <div class="text-center text-muted">
+
+        <hr>
+
+        <p class="mb-1">
+
+            <strong>Minimercados Portugal</strong>
+
+        </p>
+
+        <small>
+
+            Sistema Integrado de Gestión Comercial © 2026
+
+        </small>
+
+    </div>
+
+</footer>
+
+</main>
+
+</div>
+
+</div>
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
